@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Old-Fangled Future — Brush Ninja Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Old-Fangled Future</h1>
+    <p>A time-skip mini-animation inspired by Brush Ninja</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+      <label class="toggle">
+        <input type="checkbox" id="voiceToggle" />
+        <span>Voiceover</span>
+      </label>
+      <label>
+        Speed:
+        <input type="range" id="speed" min="0.5" max="1.5" step="0.1" value="1" />
+      </label>
+    </section>
+
+    <section class="stage">
+      <canvas id="stage" width="960" height="540" aria-label="Animation canvas"></canvas>
+    </section>
+
+    <section class="caption">
+      <div id="subtitle" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Subscribe to Cetus-P2n?</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
